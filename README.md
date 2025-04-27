@@ -1,21 +1,41 @@
-# AI Photo Enhancer
+**Live Demo: https://photoenhancer.streamlit.app/**
+
+<div align="center">
+
+  <h1 align="center">AI Photo Enhancer</h1>
+
+  <p align="center">
+    Enhance your photos with the power of AI!
+    <br />
+    <a href="https://photoenhancer.streamlit.app/"><strong>Explore the live demo »</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
+
 <a name="readme-top"></a>
 
 <!-- ABOUT THE PROJECT -->
-## Introduction
+## Introduction ✨
+
 The Photo Enhancer, harnessing the capabilities of GFPGAN for face enhancement and RealESRGAN for background refinement, represents a groundbreaking advancement in image processing technology. This innovative solution offers a sophisticated method to enhance the visual quality of digital photos by meticulously enhancing facial features and background details separately. Through the utilization of cutting-edge Generative Adversarial Networks (GANs) and state-of-the-art deep learning architectures, the Photo Enhancer achieves remarkable improvements in image clarity, sharpness, and overall aesthetic appeal.
 
-In the realm of photography, capturing and accentuating facial expressions and features is paramount, particularly in portrait photography and social media content. GFPGAN, a specialized GAN-based model for face enhancement, excels at refining facial details, enhancing skin texture, and improving overall facial aesthetics. By intelligently enhancing facial regions while preserving natural characteristics and identity, GFPGAN transforms ordinary portraits into captivating and visually stunning images.
+In the realm of photography, capturing and accentuating facial expressions and features is paramount, particularly in portrait photography and social media content. **GFPGAN**, a specialized GAN-based model for face enhancement, excels at refining facial details, enhancing skin texture, and improving overall facial aesthetics. By intelligently enhancing facial regions while preserving natural characteristics and identity, GFPGAN transforms ordinary portraits into captivating and visually stunning images.
 
-Complementing facial enhancement, background refinement is equally critical for enhancing the overall visual impact of a photo. RealESRGAN, a state-of-the-art GAN-based model tailored for super-resolution tasks, specializes in upscaling and refining background elements such as landscapes, architecture, or scenic views. By effectively enhancing background details, textures, and spatial coherence, RealESRGAN elevates the overall quality and realism of the photo, creating a harmonious visual composition that captivates the viewer's attention.
+Complementing facial enhancement, background refinement is equally critical for enhancing the overall visual impact of a photo. **RealESRGAN**, a state-of-the-art GAN-based model tailored for super-resolution tasks, specializes in upscaling and refining background elements such as landscapes, architecture, or scenic views. By effectively enhancing background details, textures, and spatial coherence, RealESRGAN elevates the overall quality and realism of the photo, creating a harmonious visual composition that captivates the viewer's attention.
 
 The integration of GFPGAN for facial enhancement and RealESRGAN for background refinement in the Photo Enhancer represents a synergistic approach to photo enhancement. By separately processing facial and background regions, this approach ensures precise and targeted enhancements tailored to specific photo components, resulting in a visually compelling final output that retains the authenticity and natural beauty of the original scene.
 
 The Photo Enhancer finds applications across various domains, including professional photography, social media content creation, digital artistry, and visual communication. Whether utilized by professional photographers to enhance portrait shots, content creators to elevate the quality of online content, or individuals seeking to enhance personal photographs, the Photo Enhancer offers a powerful and versatile tool for transforming ordinary photos into extraordinary works of art.
 
-As research and development in GAN-based image enhancement techniques continue to advance, the Photo Enhancer stands as a testament to innovation, pushing the boundaries of what is possible in digital photo processing. By leveraging the capabilities of GFPGAN and RealESRGAN, this groundbreaking solution empowers users to unleash their creativity and elevate their visual storytelling to new heights, enriching the digital landscape with stunning and immersive photographic imagery.
+As research and development in GAN-based image enhancement techniques continue to advance, the Photo Enhancer stands as a testament to innovation, pushing the boundaries of what is possible in digital photo processing. By leveraging the capabilities of GFPGAN and RealESRGAN, this groundbreaking solution empowers users to unleash their creativity and elevate their visual storytelling to new heights, enriching the digital landscape with stunning and immersive photographic imagery. The project is live at: https://photoenhancer.streamlit.app/
 
 ![sample_image](samples/output.jpg "Sample Enhancement")
+
+## Features ✨
+*   **Upload Images:** Easily upload images from your local machine.
+*   **Enhance Images:** Leverage the power of AI to enhance the uploaded images.
+*   **Download:** Save the enhanced image with a single click.
 
 <!-- ARCHITECTURE -->
 ## Architecture
@@ -145,4 +165,8 @@ Then, the streamlit app will launch in a new window.
 
 ![sample_image](samples/streamlit_app.png "Steamlit App Example")
 
+### Demo
+You can see a live demo here: https://photoenhancer.streamlit.app/
+
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
+
