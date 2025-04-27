@@ -1,5 +1,3 @@
-**Live Demo: https://photoenhancer.streamlit.app/**
-
 <div align="center">
 
   <h1 align="center">AI Photo Enhancer</h1>
