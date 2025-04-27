@@ -23,14 +23,11 @@ if image_path is not None:
     with col1:
         st.header("Input Image")
         st.image(image, width=picture_width)
-
+    
     # Create enhancer
     enhancer = Enhancer(method=method, background_enhancement=background_enhancement, upscale=upscale)
-    enhanced_image = enhancer.enhance(np.array(image))
-
-    # Convert the result to a PIL Image
-    enhanced_image = Image.fromarray(enhanced_image)
+    enhanced_image = enhancer.enhance(image)
 
     with col2:
         st.header("Enhanced Image")
-        st.image(enhanced_image, width=picture_width)
+        st.image(np.array(enhanced_image), width=picture_width)
