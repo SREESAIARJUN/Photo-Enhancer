@@ -1,16 +1,16 @@
 from PIL import Image, ImageFilter
 
 class Enhancer:
-    def __init__(self, method, background_enhancement, upscale):
-        self.method = method
-        self.background_enhancement = background_enhancement
-        self.upscale = upscale
+    def __init__(self, method=None, background_enhancement=False, upscale=None):
+        self.method = method or "Unspecified"
+        self.background_enhancement = background_enhancement or False
+        self.upscale = upscale or None
 
-    def enhance(self, image: Image.Image) -> Image.Image:
+    def enhance(self, image):
         """Enhances the given image by sharpening it.
 
         Args:
-            image: The input image to enhance.
+            image (Image.Image): The input image to enhance.
 
         Returns:
             The sharpened image.
