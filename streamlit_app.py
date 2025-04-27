@@ -17,7 +17,6 @@ picture_width = st.sidebar.slider('Picture Width', min_value=100, max_value=500)
 
 if image_path is not None:
     image = Image.open(image_path)
-    image_array = np.array(image)
 
     # Display original image
     col1, col2 = st.columns(2)
@@ -27,11 +26,11 @@ if image_path is not None:
 
     # Create enhancer
     enhancer = Enhancer(method=method, background_enhancement=background_enhancement, upscale=upscale)
-    restored_image = enhancer.enhance(image_array)
+    enhanced_image = enhancer.enhance(np.array(image))
 
     # Convert the result to a PIL Image
-    final_image = Image.fromarray(restored_image)
+    enhanced_image = Image.fromarray(enhanced_image)
 
     with col2:
         st.header("Enhanced Image")
-        st.image(final_image, width=picture_width)
+        st.image(enhanced_image, width=picture_width)
